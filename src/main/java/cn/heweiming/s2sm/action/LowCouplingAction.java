@@ -8,4 +8,5 @@ import org.apache.struts2.interceptor.SessionAware;
 public interface LowCouplingAction
 		extends ParameterAware, RequestAware, SessionAware, ApplicationAware {
 
+	
 }
