@@ -22,7 +22,7 @@ public class CouplingActionWrapper extends ActionSupport implements CouplingActi
 	protected HttpServletResponse response;
 	protected HttpSession session;
 	protected ServletContext application;
-
+	
 	@Override
 	public void setParameters(Map<String, String[]> parameters) {
 		this.parametersMap = parameters;

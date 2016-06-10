@@ -4,5 +4,7 @@ public class UserAction extends CouplingActionWrapper {
 
 	private static final long serialVersionUID = 7846095838066308532L;
 
+	
+	
 
 }

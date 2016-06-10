@@ -1,12 +1,10 @@
 package cn.heweiming.s2sm.action;
 
 import java.util.Date;
-import java.util.Map;
 
 import com.opensymphony.xwork2.ActionContext;
-import com.opensymphony.xwork2.ActionSupport;
 
-public class CommonAction extends ActionSupport {
+public class CommonAction extends CouplingActionWrapper {
 
 	public String getUserId() {
 		return userId;
@@ -80,13 +78,13 @@ public class CommonAction extends ActionSupport {
 
 	public String common() throws Exception {
 
-//		setTest("test test");
-		ActionContext actionContext = ActionContext.getContext();
-		@SuppressWarnings("unchecked")
-		Map<String, Object> requestMap = (Map<String, Object>) actionContext
-				.get("request");
+		// setTest("test test");
 		requestMap.put("test1", "test1 test1");
-		actionContext.put("test2", "test2 test21342143");
+		ActionContext actionContext = ActionContext.getContext();
+		ActionContext actCtx = ActionContext.getContext();
+		actionContext.put("test2", "test2 test24444444");
+		actCtx.put("test3", "fdsafs");
+
 		return SUCCESS;
 	}
 

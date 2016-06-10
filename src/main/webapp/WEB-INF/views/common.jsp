@@ -13,6 +13,8 @@
 	<br />
 	${requestScope.test2 }
 	<br />
+	${requestScope.test3 }
+	<br />
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-md-1">.col-md-1</div>
