@@ -86,7 +86,7 @@ public class CommonAction extends ActionSupport {
 		Map<String, Object> requestMap = (Map<String, Object>) actionContext
 				.get("request");
 		requestMap.put("test1", "test1 test1");
-		actionContext.put("test2", "test2 test2");
+		actionContext.put("test2", "test2 test21342143");
 		return SUCCESS;
 	}
 
