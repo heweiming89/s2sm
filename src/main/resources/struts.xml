@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+
+	<constant name="struts.i18n.encoding" value="UTF-8" />
+	<constant name="struts.action.extension" value="do,," />
+
+	<constant name="struts.devMode" value="true" />
+	<constant name="struts.serve.static.browserCache" value="false" />
+	<!-- <constant name="struts.enable.DynamicMethodInvocation" value="false" /> -->
+
+	<package name="default" extends="struts-default">
+		<action name="*" class="cn.heweiming.s2sm.action.CommonAction" method="{1}">
+			<result name="success">/WEB-INF/views/{1}.jsp</result>
+		</action>
+		<!-- <action name="form" class="cn.heweiming.s2sm.action.CommonAction" method="form"> -->
+		<!-- <result name="input">/WEB-INF/views/form.jsp</result> -->
+		<!-- </action> -->
+	</package>
+
+</struts>
