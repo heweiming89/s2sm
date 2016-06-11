@@ -9,9 +9,7 @@
 
 	<context:property-placeholder location="classpath*:config.properties" />
 
-	<context:component-scan base-package="cn.heweiming.ssm">
-		<context:exclude-filter type="annotation" expression="org.springframework.stereotype.Controller" />
-	</context:component-scan>
+	<context:component-scan base-package="cn.heweiming.s2sm" />
 
 	<bean id="dataSource" class="org.apache.commons.dbcp2.BasicDataSource" destroy-method="close">
 		<!-- 数据库驱动名称 -->
@@ -41,7 +39,7 @@
 	</bean>
 
 	<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
-		<property name="basePackage" value="cn.heweiming.ssm.mapper" />
+		<property name="basePackage" value="cn.heweiming.s2sm.mapper" />
 		<property name="sqlSessionFactoryBeanName" value="sqlSessionFactory" />
 	</bean>
 

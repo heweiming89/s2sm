@@ -12,7 +12,7 @@
 	<!-- <constant name="struts.enable.DynamicMethodInvocation" value="false" /> -->
 
 	<package name="default" extends="struts-default">
-		<action name="*" class="cn.heweiming.s2sm.action.CommonAction" method="{1}">
+		<action name="*" class="web.commonAction" method="{1}">
 			<result name="success">/WEB-INF/views/{1}.jsp</result>
 		</action>
 		<!-- <action name="form" class="cn.heweiming.s2sm.action.CommonAction" method="form"> -->

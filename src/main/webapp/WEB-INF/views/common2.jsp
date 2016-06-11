@@ -8,7 +8,7 @@
 </head>
 <body>
 	id:${userId }
-	<br /> 用户名:${username }
+	<br /> 用户名:${requestScope.username }
 	<br /> 密码:${password }
 	<br /> 年龄:${age }
 	<br /> 性别:${gender }

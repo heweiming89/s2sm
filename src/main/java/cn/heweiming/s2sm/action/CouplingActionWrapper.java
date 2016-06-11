@@ -31,19 +31,16 @@ public class CouplingActionWrapper extends ActionSupport implements CouplingActi
 	@Override
 	public void setRequest(Map<String, Object> request) {
 		this.requestMap = request;
-
 	}
 
 	@Override
 	public void setSession(Map<String, Object> session) {
 		this.sessionMap = session;
-
 	}
 
 	@Override
 	public void setApplication(Map<String, Object> application) {
 		this.applicationMap = application;
-
 	}
 
 	@Override
@@ -55,13 +52,11 @@ public class CouplingActionWrapper extends ActionSupport implements CouplingActi
 	@Override
 	public void setServletResponse(HttpServletResponse response) {
 		this.response = response;
-
 	}
 
 	@Override
 	public void setServletContext(ServletContext context) {
 		this.application = context;
-
 	}
 
 }
