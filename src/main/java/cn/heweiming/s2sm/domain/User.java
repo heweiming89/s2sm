@@ -11,6 +11,11 @@ public class User {
 	private int age;
 	private char gender;
 	private Date birthday;
+	
+	public User() {
+		System.out.println("User.User()");
+	}
+	
 	public int getAge() {
 		return age;
 	}

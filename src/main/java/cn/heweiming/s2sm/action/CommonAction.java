@@ -1,5 +1,6 @@
 package cn.heweiming.s2sm.action;
 
+import org.apache.commons.beanutils.BeanUtils;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Controller;
@@ -41,6 +42,10 @@ public class CommonAction extends BaseAction<User> {
 	}
 
 	public String common2() throws Exception {
+		System.out.println(model == null);
+		System.out.println("model:\t" + model.toString());
+		System.out.println("getModel:\t" + getModel().toString());
+		// requestMap.put("user", model);
 		return SUCCESS;
 	}
 
